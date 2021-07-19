@@ -140,7 +140,7 @@
 				},
                 success: function(resp){
                     if ( (resp.length > 1) && (resp.includes("http")) ) {
-                        $('#redirectTo').text('Redirecting to: ' + resp);
+                        $('#redirectTo').text('Đang chuyển hướng đến: ' + resp);
                         $('#urlgoNow').attr('href', resp);
                         $('#goNow').show();
                         var wait3s = setTimeout(function(){ window.location = resp; }, 1500);
