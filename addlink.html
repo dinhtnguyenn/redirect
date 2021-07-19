@@ -168,7 +168,7 @@
                     type: 'GET',
                     success: function(resp){
                         if ((resp.length > 4) && (resp.length < 9)) {
-                            $('#urlneedShort').val('https://dinhtnguyenn.github.io/redirecturl/?i=' + resp);
+                            $('#urlneedShort').val('https://dinhtnguyenn.github.io/redirect/?i=' + resp);
                             $('#urlneedShort').attr('readonly', 'readonly');
                         } else {
                             $('#urlneedShort').val('ERROR');
