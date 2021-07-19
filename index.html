@@ -141,6 +141,9 @@
             $.ajax({
                 url: 'https://script.google.com/macros/s/AKfycbzg0-MrZ70L20Gm7m1lYQbUchjqFxzS9Vk6grzHqK1qJ5JIohfQR1LyyS_aGjK68FUD/exec?type=2&url=' + code,
                 type: 'GET',
+				 headers: {
+					'Access-Control-Allow-Origin':'*',
+				},
                 success: function(resp){
                     if ( (resp.length > 1) && (resp.includes("http")) ) {
                         $('#redirectTo').text('Redirecting to: ' + resp);
